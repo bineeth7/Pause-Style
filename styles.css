@@ -46,4 +46,12 @@ body.dark-mode {
     background-color: #1a5dbb;
     border-color: #1a5dbb;
   }
+
+/* Positioning for the dark mode toggle button */
+#toggle-mode {
+    position: fixed;
+    top: 20px; /* Adjust as needed for your layout */
+    right: 20px; /* Adjust as needed for your layout */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
   
