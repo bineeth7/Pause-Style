@@ -1,28 +1,49 @@
-/* styles.css */
-
-/* Light Mode Styles */
-body {
-    background-color: white;
-    color: black;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-header {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Dark Mode Styles */
+/* Custom CSS for dark mode */
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
-}
-
-body.dark-mode header {
-    background-color: #1c1c1c;
-}
-
-button {
-    cursor: pointer;
-}
+  }
+  
+  body.dark-mode .bg-light {
+    background-color: #242424 !important;
+  }
+  
+  body.dark-mode .card {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+    border-bottom: 1px solid #444;
+  }
+  
+  body.dark-mode .navbar-nav .nav-link {
+    color: #ffffff !important;
+  }
+  
+  body.dark-mode .btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  body.dark-mode .card-title,
+  body.dark-mode .card-text {
+    color: #ffffff;
+  }
+  
+  body.dark-mode .btn-primary {
+    background-color: #1f6feb;
+    border-color: #1f6feb;
+  }
+  
+  body.dark-mode .btn-primary:hover {
+    background-color: #1a5dbb;
+    border-color: #1a5dbb;
+  }
+  

@@ -1,17 +1,14 @@
-// script.js
-
-document.getElementById('toggle-mode').addEventListener('click', function() {
+document.getElementById('toggle-mode').addEventListener('click', function () {
     document.body.classList.toggle('dark-mode');
+  
+    // Update the icon
+    const icon = document.getElementById('toggle-icon');
     if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'dark-mode');
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
     } else {
-        localStorage.removeItem('theme');
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
     }
-});
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    const preferredTheme = localStorage.getItem('theme');
-    if (preferredTheme) {
-        document.body.classList.add(preferredTheme);
-    }
-});
+  });
+  
